@@ -1,5 +1,5 @@
 #
-# Copyright 2017 The LineageOS Project
+# Copyright 2022 The RevengeOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,11 +18,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common RevengeOS stuff.
+$(call inherit-product, vendor/revengeos/config/common.mk)
 
 # Inherit from h870ds device
 $(call inherit-product, device/lge/h870ds/device.mk)
+
+# RevengeOS variables
+TARGET_BOOT_ANIMATION_RES := 1440
 
 # Security patch level
 PLATFORM_SECURITY_PATCH_OVERRIDE := 2019-05-01
@@ -31,7 +34,7 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH_OVERRIDE)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := h870ds
-PRODUCT_NAME := lineage_h870ds
+PRODUCT_NAME := revengeos_h870ds
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-H870DS
 PRODUCT_MANUFACTURER := LGE

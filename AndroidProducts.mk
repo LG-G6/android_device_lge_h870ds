@@ -14,10 +14,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_h870ds.mk
+    $(LOCAL_DIR)/revengeos_h870ds.mk
 
 	
 COMMON_LUNCH_CHOICES := \
-    lineage_h870ds-user \
-    lineage_h870ds-userdebug \
-    lineage_h870ds-eng
+    revengeos_h870ds-userdebug \
+    revengeos_h870ds-user \
+    revengeos_h870ds-eng
